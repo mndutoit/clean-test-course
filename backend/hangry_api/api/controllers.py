@@ -1,5 +1,5 @@
 class Delivery():
-  def calculate(order,distance):
+  def calculate(order, distance):
     items = 0
     for item in order:
       items += item.quantity
@@ -8,7 +8,7 @@ class Delivery():
     elif items > 5 and distance > 3:
       return 5
     else:
-      return 2.5
+      return 3.50
 
 class Subtotal():
   def calculate(order):
